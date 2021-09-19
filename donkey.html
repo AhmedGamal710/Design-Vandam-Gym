@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Test</title>
+    <script type="text/javascript">
+
+        // Called on form's `onsubmit`
+        function tosubmit() {
+            // Getting the value of your text input
+            var mytext = document.getElementById("mytext").value;
+
+            // Storing the value above into localStorage
+            localStorage.setItem("mytext", mytext);
+
+            return true;
+        }
+
+    </script> 
+</head>
+<body>
+    <center>   
+        <!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL --> 
+        <form name="myform" onsubmit="tosubmit();" action="p2.html">
+
+            <input  id="mytext" type="text" name="data">
+            <input type="submit" value="Submit">
+
+        </form>
+</body>
+</html>
